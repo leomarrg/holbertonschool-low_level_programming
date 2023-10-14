@@ -2,9 +2,9 @@
 
 /**
  *main - main function it hold the code to print what the programs ask
- *
+ *Description: will print whats asked
  *header is stdio.h
- *return: 0 if code works
+ *Return: Always 0 (Success)
 */
 int main(void)
 {
