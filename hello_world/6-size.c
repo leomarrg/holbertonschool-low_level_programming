@@ -6,12 +6,11 @@
  * Return: this program will return 0 if the run was succesfull
 */
 int main(void)
-{
-	printf("Size of an int: %zu byte(s)\n", sizeof(int));
-	printf("Size of a char: %zu byt(e)\n", sizeof(char));
-	printf("Size of a float: %zu byte(s)\n", sizeof(float));
-	printf("Size of a long: %zu byte(s)\n", sizeof(long));
-	printf("Size of a long long int: %zu byte(s)\n", sizeof(long long int));
-	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+{	
+	printf("Size of a char: %zu bytes\n", sizeof(char));
+	printf("Size of an int: %zu bytes\n"\n, sizeof(int));
+	printf("Size of a long int: %zu bytes\n", sizeof(long int));
+	printf("Size of a long long int: bytes %zu\n" sizeof(long long int));
+	printf("Size of a float: %zu\n" sizeof(float));
 	return (0);
 }
