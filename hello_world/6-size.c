@@ -4,7 +4,7 @@
 /**
  * main - will print the size of various types on the computer
  * Description: this program will print the size of all the variables types
- * Return: this program will return 0 if the run was succesfull
+ * Return: this program will return 0 if the run was succesful
 */
 int main(void)
 {
