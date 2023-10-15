@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <bits/libc-header-start.h>
+
 
 /**
  * main - will print the size of various types on the computer
