@@ -6,7 +6,7 @@
  * Return: this program will return 0 if the run was succesfull
 */
 int main(void)
-{	
+{
 	printf("Size of a char: %zu bytes\n", sizeof(char));
 	printf("Size of an int: %zu bytes\n", sizeof(int));
 	printf("Size of a long int: %zu bytes\n", sizeof(long int));
