@@ -8,14 +8,13 @@
 
 int main(void)
 {
-	char c;	
+	char c;
 
 	for (c = '0'; c <= '9'; c++)
 	{
 		putchar(c);
 	}
-
-	for(c = 'a'; c < 'g'; c++)
+	for (c = 'a'; c < 'g'; c++)
 	{
 		putchar(c);
 	}
