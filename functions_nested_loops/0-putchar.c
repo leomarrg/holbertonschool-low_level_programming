@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "_putchar.c"
 
 /**
  * main - this main function contains everything
@@ -8,7 +8,8 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char string[15] = "_putchar";
 
+	_putchar(string[20]);
 	return (0);
 }
