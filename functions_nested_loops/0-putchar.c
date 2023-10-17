@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include "_putchar.c"
 /**
  * main - this main function contains everything
  * Description: this will print _putchar
