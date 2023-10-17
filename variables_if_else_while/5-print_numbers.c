@@ -8,12 +8,11 @@
 
 int main(void)
 {
-	char c = 'a';
+	int c;
 
-	for(c = 'a'; c <= 'z'; c++)	
+	for (c = 0; c < 10; ++c)
 	{
-		if (c != 'e' && c != 'q')
-			putchar(c);
+		printf("%i",c);
 	}
 	putchar('\n');
 	return (0);
