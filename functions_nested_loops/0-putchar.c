@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include "_putchar.c"
 /**
  * main - this main function contains everything
  * Description: this will print _putchar
@@ -8,8 +9,13 @@
 
 int main(void)
 {
-	char string[15] = "_putchar";
+	char string[9] = "_putchar";
+	int i;
 
-	_putchar(string[20]);
+	for(i = 0; i < 9; i++)
+	{
+		_putchar(string[i]);
+	}
+
 	return (0);
 }
