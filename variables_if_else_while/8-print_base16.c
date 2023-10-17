@@ -8,12 +8,16 @@
 
 int main(void)
 {
-	int c, x;	
+	char c;	
 
-	for (c = 0; c < 16; c++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		x =c % 10 + '0';
-		putchar(x);
+		putchar(c);
+	}
+
+	for(c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
