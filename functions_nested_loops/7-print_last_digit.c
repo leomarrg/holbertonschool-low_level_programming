@@ -10,11 +10,9 @@
 int print_last_digit(int n)
 {
 	int lastDig;
-	char lastDigChar;
 
 	lastDig = n % 10;
-	lastDigChar = '0'+ lastDig;
 
-	_putchar(lastDigChar);
+	_putchar('0' + lastDig);
 	return (lastDig);
 }
