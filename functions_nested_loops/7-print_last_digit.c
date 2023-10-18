@@ -18,5 +18,5 @@ int print_last_digit(int n)
 	lastDig = n % 10;
 	lastDigChar = '0' + lastDig;
 	_putchar(lastDigChar);
-	return (lastDig);
+	return (lastDigChar);
 }
