@@ -9,6 +9,7 @@ void jack_bauer(void)
 {
 	int startTimeSecs, endTimeSecs;
 	int startTimeHour, endTimeHour;
+
 	endTimeSecs = 60;
 	endTimeHour = 24;
 
