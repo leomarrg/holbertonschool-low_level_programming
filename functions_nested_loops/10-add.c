@@ -8,10 +8,11 @@
 */
 int add(int a, int b)
 {
-	a = 5;
-	b = 5;
 
-	return a + b;
+	int n;
+	n = a + b;
+
+	return n;
 }
 
 
