@@ -1,5 +1,5 @@
-school: main.c utils.c
-	gcc -o school main.c utils.c
+school: main.c
+	gcc -o school
 
 all: school
 
