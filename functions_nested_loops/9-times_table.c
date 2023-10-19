@@ -4,13 +4,13 @@ void times_table(void)
 {
 	int i, j, x;
 
-	for(j = 0; j < i; j++)
+	for (j = 0; j < i; j++)
 	{
-		for(i = 0; i <= 9; i++)
+		for (i = 0; i <= 9; i++)
 		{
 			x = i * j;
 
-			if(x > 9)
+			if (x > 9)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -19,7 +19,7 @@ void times_table(void)
 			}
 			else
 			{
-				if(i != 0)
+				if (i != 0)
 				{
 					_putchar(',');
 					_putchar(' ');
