@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * print_fizzbuzz - function to print fizz buzz
+ * main - function to print fizz buzz
  * Return: 0 if succesful
 */
 
