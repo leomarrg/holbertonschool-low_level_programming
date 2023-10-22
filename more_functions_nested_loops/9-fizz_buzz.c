@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- * print_fizzbuzz - function to print fizz buzz 
+ * print_fizzbuzz - function to print fizz buzz
  * Return: 0 if succesful
 */
 
-int main()
+int main(void)
 {
 	int i;
 	int mult3 = 3;
@@ -13,7 +13,7 @@ int main()
 	for (i = 1; i <= 100; i++)
 	{
 		if (i % mult3 == 0 && i % mult5 == 0)
-		{	
+		{
 			printf("FizzBuzz");
 			printf(" ");
 		}
@@ -30,7 +30,6 @@ int main()
 			else
 			printf("%i ", i);
 	}
-	printf("\n");
 
 	return (0);
 }
