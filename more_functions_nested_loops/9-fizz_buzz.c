@@ -12,9 +12,9 @@ int main()
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % mult3 == 0)
+		if (i % mult3 == 0 && i % mult5 == 0)
 		{	
-			printf("Fizz");
+			printf("FizzBuzz");
 			printf(" ");
 		}
 		else if (i % mult5 == 0)
@@ -22,9 +22,9 @@ int main()
 			printf("Buzz");
 			printf(" ");
 		}
-		else if (i % mult3 == 0 && i % mult5 == 0)
+		else if (i % mult3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 			printf(" ");
 		}
 			else
