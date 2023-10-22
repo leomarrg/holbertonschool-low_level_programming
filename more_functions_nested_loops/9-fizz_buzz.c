@@ -14,18 +14,19 @@ int main(void)
 	{
 		if (i % mult3 == 0 && i % mult5 == 0)
 		{
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		}
 		else if (i % mult5 == 0)
 		{
-			printf("Buzz ");
+			printf("Buzz");
 		}
 		else if (i % mult3 == 0)
 		{
-			printf("Fizz ");
+			printf("Fizz");
 		}
 			else
-			printf("%i ", i);
+				printf("%i", i);
+			printf(" ");
 	}
 	return (0);
 }
