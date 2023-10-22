@@ -24,7 +24,7 @@ int main()
 		}
 		else if (i % mult3 == 0 && i % mult5 == 0)
 		{
-			printf("Fizz Buzz");
+			printf("FizzBuzz");
 			printf(" ");
 		}
 			else
