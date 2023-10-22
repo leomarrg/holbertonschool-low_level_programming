@@ -15,14 +15,17 @@ int main(void)
 		if (i % mult3 == 0 && i % mult5 == 0)
 		{
 			printf("FizzBuzz");
+			printf(" ");
 		}
 		else if (i % mult5 == 0)
 		{
 			printf("Buzz");
+			printf(" ");
 		}
 		else if (i % mult3 == 0)
 		{
 			printf("Fizz");
+			printf(" ");
 		}
 			else
 			printf("%i ", i);
