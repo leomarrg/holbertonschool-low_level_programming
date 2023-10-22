@@ -28,8 +28,7 @@ int main(void)
 				printf("%i", i);
 			printf(" ");
 		if (i == 100)
-			continue;
-	}
-	printf("\n");
+			printf("\n");
+	}	
 	return (0);
 }
