@@ -10,7 +10,7 @@ int main(void)
 	int mult3 = 3;
 	int mult5 = 5;
 
-	for (i = 1; i <= 100; i++)
+	for (i = 1; i < 101; i++)
 	{
 		if (i % mult3 == 0 && i % mult5 == 0)
 		{
@@ -28,5 +28,6 @@ int main(void)
 				printf("%i", i);
 			printf(" ");
 	}
+	printf("\n");
 	return (0);
 }
