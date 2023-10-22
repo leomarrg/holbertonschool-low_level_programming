@@ -1,11 +1,10 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * print_fizzbuzz - function to print fizz buzz 
- * Return: doesn't return anything
+ * Return: 0 if succesful
 */
 
-void print_fizzbuzz()
+int main()
 {
 	int i;
 	int mult3 = 3;
@@ -32,4 +31,6 @@ void print_fizzbuzz()
 			printf("%i ", i);
 	}
 	printf("\n");
+
+	return (0);
 }
