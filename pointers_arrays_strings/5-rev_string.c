@@ -24,8 +24,6 @@ void rev_string(char *s)
 		i++;
 	}
 
-	printf("\n\n");
-
 	lastChar = i - 1;
 
 	i = 0;
