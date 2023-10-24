@@ -9,9 +9,10 @@
 
 void puts_half(char *str)
 {
-	int i, half;
+	int i, half, j;
 
 	i = 0;
+	j = 0;
 
 	while (str[i] != '\0')
 	{
@@ -20,11 +21,10 @@ void puts_half(char *str)
 
 	half = (i - 1) / 2;
 
-	while (str[half] != '\0')
+	for(j = half; j < i; j++)
 	{
-		half++;
 		if (half < i)
-			_putchar(str[half]);
+			_putchar(str[j]);
 	}
 
 }
