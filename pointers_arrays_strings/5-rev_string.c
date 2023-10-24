@@ -15,7 +15,6 @@ void rev_string(char *s)
 
 	i = 0;
 
-	printf("\n\n");
 	while (s[i] != '\0')
 	{
 		tempChar = s[i];
