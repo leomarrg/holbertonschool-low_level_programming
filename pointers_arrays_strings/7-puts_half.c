@@ -20,10 +20,11 @@ void puts_half(char *str)
 
 	half = (i - 1) / 2;
 
-	while (half < i)
+	while (str[half] != '\0')
 	{
 		half++;
-		_putchar(str[half]);
+		if (half < i)
+			_putchar(str[half]);
 	}
 
 }
