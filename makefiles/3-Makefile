@@ -1,42 +1,19 @@
-# Compiler
 CC = gcc
-
-# Source files
-SRC = main.c file1.c file2.c  # Add your source files here
-
-# Object files (automatically generated from SRC)
-OBJ = $(SRC:.c=.o)
-
-# Executable name
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o) 
 NAME = school
-
-# Command to remove files
 RM = rm -f
 
-# Default target: Build the executable
-all: $(NAME)
+all: $(OBJ)
+    $(CC) $(OBJ) -o $(NAME)
 
-# Build the executable
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
-
-# Rule to compile .c files to .o files
-%.o: %.c
-	$(CC) -c $< -o $@
-
-# Clean Emacs and Vim temporary files along with the executable
 clean:
-	$(RM) *~ \#* $(NAME)
+    $(RM) *~ $(NAME)
 
-# Delete the object files
 oclean:
-	$(RM) $(OBJ)
+    $(RM) $(OBJ)
 
-# Delete Emacs and Vim temporary files, the executable, and the object files
 fclean: clean oclean
 
-# Force recompilation of all source files
 re: fclean all
-
-.PHONY: all clean oclean fclean re
 
