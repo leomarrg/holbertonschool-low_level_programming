@@ -20,5 +20,5 @@ int i;
         temp2 += a[i * size + (size - 1 - i)];
     }
 
-    printf("%d %d\n", temp1, temp2);
+    printf("%d, %d\n", temp1, temp2);
 }
