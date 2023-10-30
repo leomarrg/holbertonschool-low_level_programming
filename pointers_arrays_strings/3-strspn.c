@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 
 		if (charToCheck >= 'a' && charToCheck <= 'z')
 		{
-			while (accept[j] != '\0')
+			while (accept[j])
 			{
 				if (charToCheck == accept[j])
 				{
