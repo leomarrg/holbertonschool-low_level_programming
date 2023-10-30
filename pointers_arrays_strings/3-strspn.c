@@ -23,7 +23,8 @@ unsigned int _strspn(char *s, char *accept)
 		charToCheck = s[i];
 		j = 0;
 
-		if ((charToCheck >= 'a' && charToCheck <= 'z') || (charToCheck >= 'A' && charToCheck <= 'Z'))
+		if ((charToCheck >= 'a' && charToCheck <= 'z') ||
+		(charToCheck >= 'A' && charToCheck <= 'Z'))
 		{
 			while (accept[j])
 			{
