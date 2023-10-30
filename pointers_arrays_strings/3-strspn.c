@@ -17,20 +17,23 @@ unsigned int _strspn(char *s, char *accept)
 	i = 0;
 	j = 0;
 	length = 0;
-	
+
 	while (s[i] != '\0')
 	{
 		charToCheck = s[i];
 		j = 0;
 
-		while (accept[j] != '\0')
+		if (charToCheck >= 'a' && charToCheck <= 'z')
 		{
-			if (charToCheck == accept[j])
+			while (accept[j] != '\0')
 			{
-				length++;
-				break;
+				if (charToCheck == accept[j])
+				{
+					length++;
+					break;
+				}
+				j++;
 			}
-			j++;
 		}
 	i++;
 	}
