@@ -12,12 +12,10 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 
-	int i, j, result, counter;
+	int i, j, result;
 	char *temp;
 
 	result = 0;
-	i = 0;
-	counter = 0;
 
 	if (argc == 1)
 	{
@@ -25,13 +23,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		return (0);
 	}
 
-	while(*argv)
-	{
-		counter++;
-		argv++;
-	}
-
-	for (i = 1; i < counter; i++)
+	for (i = 1; i < argc; i++)
 	{
 		temp = argv[i];
 
