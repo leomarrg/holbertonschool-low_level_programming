@@ -16,6 +16,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 	char *temp;
 
 	result = 0;
+	i = 0;
 
 	if (argc == 1)
 	{
@@ -23,7 +24,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		return (0);
 	}
 
-	for (i = 1; i < argc; i++)
+	while (*temp != '\0')
 	{
 		temp = argv[i];
 
@@ -37,6 +38,8 @@ int main(int argc, __attribute__((unused)) char *argv[])
 
 		}
 		result += atoi(argv[i]);
+	temp++;
+	i++;
 	}
 	printf("%i\n", result);
 	return (0);
