@@ -12,11 +12,12 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 
-	int i, j, result;
+	int i, j, result, counter;
 	char *temp;
 
 	result = 0;
 	i = 0;
+	counter = 0;
 
 	if (argc == 1)
 	{
@@ -24,7 +25,12 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		return (0);
 	}
 
-	while (*temp != '\0')
+	while(*argv)
+	{
+		counter++;
+	}
+
+	for (i = 1; i < counter; i++)
 	{
 		temp = argv[i];
 
@@ -38,8 +44,6 @@ int main(int argc, __attribute__((unused)) char *argv[])
 
 		}
 		result += atoi(argv[i]);
-	temp++;
-	i++;
 	}
 	printf("%i\n", result);
 	return (0);
