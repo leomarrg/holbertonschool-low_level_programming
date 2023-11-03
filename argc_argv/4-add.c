@@ -12,7 +12,7 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 
-	int i, j, result;
+	int i, result;
 	char *temp;
 
 	result = 0;
@@ -27,14 +27,14 @@ int main(int argc, __attribute__((unused)) char *argv[])
 	{
 		temp = argv[i];
 
-		for (j = 0; j < argc; j++)
+		while(*temp)	
 		{
-			if (temp[j] >= 'a' && temp[j] <= 'z')
+			if (*temp >= 'a' && *temp <= 'z')
 			{
 				printf("Error\n");
 				return (1);
 			}
-
+			temp++;
 		}
 		result += atoi(argv[i]);
 	}
