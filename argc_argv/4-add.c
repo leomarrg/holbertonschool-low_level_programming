@@ -20,6 +20,8 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	
+	
 
 	for (i = 1; i < argc; i++)
 	{
@@ -32,8 +34,12 @@ int main(int argc, __attribute__((unused)) char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			num += atoi(argv[j]);
+			else
+				num += atoi(argv[j])
 		}
 	}
+
+
+
 	return (0);
 }
