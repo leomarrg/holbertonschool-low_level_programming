@@ -28,6 +28,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 	while(*argv)
 	{
 		counter++;
+		argv++;
 	}
 
 	for (i = 1; i < counter; i++)
