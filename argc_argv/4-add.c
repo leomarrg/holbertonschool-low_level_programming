@@ -27,7 +27,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 	{
 		temp = argv[i];
 
-		while(*temp)	
+		while(*temp)
 		{
 			if (*temp >= 'a' && *temp <= 'z')
 			{
