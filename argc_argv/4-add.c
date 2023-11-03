@@ -12,14 +12,17 @@
 int main(int argc, __attribute__((unused)) char *argv[])
 {
 
-	int i, j, num;
+	int i, j, result;
 	char *temp;
+
+	result = 0;
 
 	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
 	}
+
 	for (i = 1; i < argc; i++)
 	{
 		temp = argv[i];
@@ -31,8 +34,10 @@ int main(int argc, __attribute__((unused)) char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-				num += atoi(argv[j]);
+
 		}
+		result += atoi(argv[i]);
 	}
+	printf("%i\n", result);
 	return (0);
 }
