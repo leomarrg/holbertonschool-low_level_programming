@@ -20,9 +20,6 @@ int main(int argc, __attribute__((unused)) char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	
-	
-
 	for (i = 1; i < argc; i++)
 	{
 		temp = argv[i];
@@ -35,11 +32,11 @@ int main(int argc, __attribute__((unused)) char *argv[])
 				return (1);
 			}
 			else
-				num += atoi(argv[j])
+			{
+				num += atoi(argv[j]);
+				printf("%i\n", num);
+			}
 		}
 	}
-
-
-
 	return (0);
 }
