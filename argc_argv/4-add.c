@@ -31,11 +31,7 @@ int main(int argc, __attribute__((unused)) char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			else
-			{
 				num += atoi(argv[j]);
-				printf("%i\n", num);
-			}
 		}
 	}
 	return (0);
