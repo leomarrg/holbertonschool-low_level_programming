@@ -9,7 +9,7 @@
 
 int findPrime(int n, int factor)
 {
-	if(factor * factor > n)
+	if (factor * factor > n)
 	{
 		return (1);
 	}
