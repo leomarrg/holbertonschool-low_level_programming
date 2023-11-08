@@ -12,7 +12,7 @@ char *_strdup(char *str)
 
 	int i, charCounter;
 	char *strCpy;
-	
+
 	charCounter = 0;
 
 	if (str == NULL)
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 		str++;
 	}
 
-	strCpy = (char *)malloc(charCounter * sizeof(char));
+	strCpy = (char *)malloc(charCounter + 1 * sizeof(char));
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
