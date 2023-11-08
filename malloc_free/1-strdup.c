@@ -17,6 +17,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
+
 	while (*str != '\0')
 	{
 		charCounter++;
@@ -25,9 +26,15 @@ char *_strdup(char *str)
 
 	strCpy = (char *)malloc(charCounter + 1 * sizeof(char));
 
+	if (strCpy == NULL)
+		return (NULL);
+
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		strCpy[i] = str[i];
 	}
+
+	strCpy[charCounter] = '\0';
+
 	return (strCpy);
 }
