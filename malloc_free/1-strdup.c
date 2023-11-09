@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * _strdup - creates a duplicate of a string
@@ -26,15 +27,21 @@ char *_strdup(char *str)
 
 	strCpy = (char *)malloc(charCounter + 1 * sizeof(char));
 
+	printf("testing output after allocating space in memory");
+
 	if (strCpy == NULL)
+	{
+		printf("the string is null");
 		return (NULL);
+	}
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
+		printf("inside for");
 		strCpy[i] = str[i];
 	}
 
-	strCpy[charCounter] = '\0';
+	strCpy[charCounter + 1] = '\0';
 
 	return (strCpy);
 }

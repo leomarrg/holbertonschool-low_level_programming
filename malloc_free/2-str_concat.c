@@ -11,30 +11,40 @@
 char *str_concat(char *s1, char *s2)
 {
 
-	char *tmpPtr, tmpChar;
-	int j, charCounter;
+	char *tmpPtr;
+	int i, j, charCounter, charCounter2;
 
 	j = 0;
+	i = 0;
 	charCounter = 0;
+	charCounter2 = 0;
 
 	while (s1[charCounter])
 	{
 		charCounter++;
 	}
 
-	tmpPtr = (char *)malloc((charCounter) * sizeof(char));
+	while (s2[charCounter2])
+	{
+		charCounter2++;
+	}
+
+	tmpPtr = (char *)malloc((charCounter + charCounter2 + 1) * sizeof(char));
 
 	if (tmpPtr == NULL)
 		return (NULL);
 
-	tmpPtr[charCounter + 1] = '\0';
+	tmpPtr[charCounter + charCounter2] = '\0';
 
-		while (s2[j] != '\0')
-		{
-			tmpChar = s2[j];
-			tmpPtr[charCounter] = tmpChar;
-			j++;
-			charCounter++;
-		}
+	for (i = 0; i < charCounter; i++)
+	{
+		tmpPtr[i] = s1[i];
+	}
+
+	for (j = 0; j < charCounter2; j++)
+	{
+		tmpPtr[i + j] = s2[j];
+	}
+
 	return (tmpPtr);
 }
