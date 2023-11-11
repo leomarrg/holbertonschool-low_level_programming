@@ -19,32 +19,33 @@ char *str_concat(char *s1, char *s2)
 	charCounter = 0;
 	charCounter2 = 0;
 
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
 	while (s1[charCounter])
 	{
 		charCounter++;
 	}
-
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	while (s2[charCounter2])
 	{
 		charCounter2++;
 	}
-
 	tmpPtr = (char *)malloc((charCounter + charCounter2 + 1) * sizeof(char));
-
 	if (tmpPtr == NULL)
 		return (NULL);
-
 	tmpPtr[charCounter + charCounter2] = '\0';
-
 	for (i = 0; i < charCounter; i++)
 	{
 		tmpPtr[i] = s1[i];
 	}
-
 	for (j = 0; j < charCounter2; j++)
 	{
 		tmpPtr[i + j] = s2[j];
 	}
-
 	return (tmpPtr);
 }
