@@ -19,15 +19,12 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	while (*str != '\0')
+	for (i = 0; str[i]; i++)
 	{
 		charCounter++;
-		str++;
 	}
 
-	strCpy = (char *)malloc(charCounter + 1 * sizeof(char));
-
-	printf("testing output after allocating space in memory");
+	strCpy = malloc(sizeof(char) * (charCounter + 1));
 
 	if (strCpy == NULL)
 	{
@@ -35,13 +32,12 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; str[i]; i++)
 	{
-		printf("inside for");
 		strCpy[i] = str[i];
 	}
 
-	strCpy[charCounter + 1] = '\0';
+	strCpy[charCounter] = '\0';
 
 	return (strCpy);
 }
