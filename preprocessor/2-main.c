@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/** main - main function
+/**
+ * main - main function
  * Return: returns 0 if sucessful
 */
 
