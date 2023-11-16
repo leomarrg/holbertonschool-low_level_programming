@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/** print_dog - this will print the attributes in the struct
+/**
+ *print_dog - this will print the attributes in the struct
  * @d: takes attributes from struct
 */
 
