@@ -3,6 +3,7 @@
 
 /**
  * array_iterator - executes a function on each element of arr
+ * @array: array
  * @size: size of array
  * @action: action of function
  * Return: returns nothing
