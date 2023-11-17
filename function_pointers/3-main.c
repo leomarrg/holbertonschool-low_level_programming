@@ -28,8 +28,8 @@ int main(int argc, char *argv[])
 
 	if (operation == NULL)
 	{
-	    printf("Error\n");
-	    return (99);
+		printf("Error\n");
+		return (99);
 	}
 
 	if ((*operation == op_div || *operation == op_mod) && num2 == 0)
