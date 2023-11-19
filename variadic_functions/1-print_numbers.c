@@ -4,7 +4,7 @@
 
 /**
  * print_numbers - prints numbers
- * @separator - string between numbers
+ * @separator: string between numbers
  * @n: number of ints in function
  * Return: returns nothing
 */
@@ -14,6 +14,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	unsigned int i;
 	int nums;
+
 	va_list(args);
 	va_start(args, n);
 
@@ -22,8 +23,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		nums = va_arg(args, int);
 		printf("%i", nums);
 
-	if (i < n -1 && separator != NULL)
-		printf("%s", separator);
+		if (i < n - 1 && separator != NULL)
+			printf("%s", separator);
 	}
 	va_end(args);
 
