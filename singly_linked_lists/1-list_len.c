@@ -16,8 +16,6 @@ size_t list_len(const list_t *h)
 
 	while (h != NULL)
 	{
-		if (h->str != NULL && h->str[0] == '\0')
-			return (0);
 		h = h->next;
 		elem++;
 	}
