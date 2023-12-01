@@ -22,6 +22,7 @@ typedef struct dlistint_s
 size_t print_dlistint(const dlistint_t *h);
 size_t dlistint_len(const dlistint_t *h);
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
+size_t _print_dlistint_backward(const dlistint_t *h);
 int _putchar(char c);
 
 #endif
