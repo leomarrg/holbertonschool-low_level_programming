@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * void free_dlistint - frees memory
+ * free_dlistint - frees memory
  * @head: head node
  * Return: returns nothing
 */
