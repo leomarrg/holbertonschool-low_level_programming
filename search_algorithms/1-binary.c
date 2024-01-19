@@ -34,7 +34,7 @@ int binary_search(int *array, size_t size, int value)
 
 		if (array[mid] == value)
 		{
-			return mid;
+			return (mid);
 		}
 		else if (array[mid] < value)
 		{
@@ -45,7 +45,5 @@ int binary_search(int *array, size_t size, int value)
 			high = mid - 1;
 		}
 	}
-
-	printf("Found %d at index: -1\n", value);
 	return (-1);
 }
